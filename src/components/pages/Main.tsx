@@ -3,25 +3,40 @@ import React from "react";
 function Main() {
   return (
     <div className="flex justify-center p-8">
-      <div className="flex flex-col gap-8">
-        <div className="flex items-center">
+      <div className="flex flex-col gap-8 lg:max-w-[96rem]">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
           <img
-            src="./assets/green-view-logo.svg"
+            src="./assets/green-view-logo.png"
             alt="Green View app logo"
-            className="w-[4rem] h-[4rem] block"
+            className="max-w-[14rem] block self-center"
           />
-          <span className="text-2xl text-white font-bold">GreenView</span>
+
+          <h1 className="flex flex-col gap-1 text-3xl text-gray-600 font-display">
+            <strong className="text-primary-1">
+              Healthy Garden, Happy You
+            </strong>{" "}
+            Easy Pest Identification App
+          </h1>
         </div>
 
-        <h1 className="flex flex-col gap-1 text-3xl text-white font-display max-w-[95%]">
-          <strong>Healthy Garden, Happy You</strong> Easy Pest Identification App
-        </h1>
+        <p className="text-gray-500 text-xl max-w-[90%]">
+          Download now and become a plant pro.
+        </p>
 
-        <p className="text-white text-xl max-w-[90%]">Download now and become a plant pro.</p>
+        <div className="w-[15rem] h-[15rem] bg-primary-1 rounded-md self-center block"></div>
 
-        <div className="w-[15rem] h-[15rem] bg-white rounded-md self-center">
+        <p className="text-gray-500 text-base">
+          Scan the QR code or click on the button below.
+        </p>
 
-        </div>
+        <button className="flex items-center justify-center gap-2 p-3 border-2 rounded-md bg-primary-1">
+          <img
+            src="./assets/down-arrow.svg"
+            alt="Ícone de uma seta para baixo"
+            className="max-w-[2rem]"
+          />
+          <span className="text-white text-sm font-extralight">Download</span>
+        </button>
       </div>
     </div>
   );
