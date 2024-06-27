@@ -21,7 +21,7 @@ function Main() {
           </div>
 
           <p className="text-gray-800 text-xl max-w-[90%]">
-            Baixe agora e se torne um especialista em plantas.
+            Baixe agora e se torne um especialista em pestes
           </p>
 
           <div className="w-[15rem] h-[15rem] rounded-md self-center block">
@@ -32,12 +32,12 @@ function Main() {
           </div>
 
           <p className="text-gray-800 text-base">
-            Escaneie o QR code ou clique no botão abaixo.
+            Escaneie o QR code ou clique no botão abaixo para baixar
           </p>
 
           <a
             className="flex w-fit items-center justify-between self-center gap-4 p-3 pr-4 rounded-full bg-primary-1 hover:bg-green-600"
-            href="https://github.com/GreenViewVisoes/GreenViewFrontEnd/releases/download/V1.0.1/application-b433af60-479c-4b7c-9f91-3fdef9300341.apk"
+            href="https://expo.dev/artifacts/eas/qn5RYr8sUzhQX3iYjhJzvA.apk"
             target="_blank"
           >
             <img
