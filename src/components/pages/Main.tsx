@@ -2,41 +2,52 @@ import React from "react";
 
 function Main() {
   return (
-    <div className="flex justify-center p-8">
-      <div className="flex flex-col gap-8 lg:max-w-[96rem]">
-        <div className="flex flex-col lg:flex-row items-center gap-8">
-          <img
-            src="./assets/green-view-logo.png"
-            alt="Green View app logo"
-            className="max-w-[14rem] block self-center"
-          />
+    <div className="flex justify-center items-center lg:h-screen h-full lg:p-8 p-4 bg-gradient">
+      <div className="lg:bg-gray-100 p-16 rounded-2xl w-[60rem]">
+        <div className="flex flex-col items-center gap-8 lg:max-w-[40rem] lg:mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            <img
+              src="./assets/green-view-logo.png"
+              alt="Green View app logo"
+              className="max-w-[14rem] block self-center"
+            />
 
-          <h1 className="flex flex-col gap-1 text-3xl text-gray-600 font-display">
-            <strong className="text-primary-1">
-              Healthy Garden, Happy You
-            </strong>{" "}
-            Easy Pest Identification App
-          </h1>
+            <h1 className="flex flex-col gap-1 text-3xl text-gray-600 font-display max-lg:text-2xl">
+              <strong className="text-primary-1">
+                Sua plantação saudável, você feliz
+              </strong>{" "}
+              Identifique pestes com facilidade
+            </h1>
+          </div>
+
+          <p className="text-gray-800 text-xl max-w-[90%]">
+            Baixe agora e se torne um especialista em plantas.
+          </p>
+
+          <div className="w-[15rem] h-[15rem] rounded-md self-center block">
+            <img
+              src="./assets/qr-code.svg"
+              alt="QR para abaixar o app Green View"
+            />
+          </div>
+
+          <p className="text-gray-800 text-base">
+            Escaneie o QR code ou clique no botão abaixo.
+          </p>
+
+          <a
+            className="flex w-fit items-center justify-between self-center gap-4 p-3 pr-4 rounded-full bg-primary-1 hover:bg-green-600"
+            href="https://github.com/GreenViewVisoes/GreenViewFrontEnd/releases/download/V1.0.1/application-b433af60-479c-4b7c-9f91-3fdef9300341.apk"
+            target="_blank"
+          >
+            <img
+              src="./assets/down-arrow.svg"
+              alt="Ícone de uma seta para baixo"
+              className="max-w-[2rem]"
+            />
+            <span className="text-white text-sm font-medium">Download</span>
+          </a>
         </div>
-
-        <p className="text-gray-500 text-xl max-w-[90%]">
-          Download now and become a plant pro.
-        </p>
-
-        <div className="w-[15rem] h-[15rem] bg-primary-1 rounded-md self-center block"></div>
-
-        <p className="text-gray-500 text-base">
-          Scan the QR code or click on the button below.
-        </p>
-
-        <button className="flex items-center justify-center gap-2 p-3 border-2 rounded-md bg-primary-1">
-          <img
-            src="./assets/down-arrow.svg"
-            alt="Ícone de uma seta para baixo"
-            className="max-w-[2rem]"
-          />
-          <span className="text-white text-sm font-extralight">Download</span>
-        </button>
       </div>
     </div>
   );
